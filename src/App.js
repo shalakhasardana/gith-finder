@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+  name = () => 'Bar';
+
   render() {
-    const name = () => 'Bar';
     return (
       <div>
-        <h1>Hello {name().toLowerCase()}</h1>
+        <h1>Hello {this.name().toLowerCase()}</h1>
       </div>
     );
   }
