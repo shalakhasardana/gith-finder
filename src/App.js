@@ -2,14 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  name = () => 'Bar';
+  loading = true;
 
   render() {
-    return (
-      <div>
-        <h1>Hello {this.name().toLowerCase()}</h1>
-      </div>
-    );
+    return <div>{this.loading ? <h1>Loading....</h1> : <h1>Hello</h1>}</div>;
   }
 }
 
